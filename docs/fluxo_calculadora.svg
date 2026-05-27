@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-label="Fluxo da calculadora de combustivel">
+  <defs>
+    <style>
+      .title { font: 800 46px Verdana, sans-serif; fill: #0f172a; }
+      .sub { font: 500 22px Verdana, sans-serif; fill: #334155; }
+      .h { font: 800 28px Verdana, sans-serif; fill: #111827; }
+      .b { font: 600 22px Verdana, sans-serif; fill: #111827; }
+      .t { font: 500 19px Verdana, sans-serif; fill: #1f2937; }
+      .s { font: 500 17px Verdana, sans-serif; fill: #374151; }
+      .chip { font: 700 16px Verdana, sans-serif; fill: #0f172a; }
+    </style>
+
+    <marker id="arrow" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#334155"/>
+    </marker>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#64748b" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1100" fill="#f8fafc"/>
+
+  <text x="70" y="72" class="title">Como o app funciona (visao simples)</text>
+  <text x="70" y="108" class="sub">Calculadora de Combustivel - do preenchimento ate o resultado</text>
+
+  <rect x="70" y="140" width="1460" height="120" rx="18" fill="#e0f2fe" stroke="#38bdf8" stroke-width="2"/>
+  <text x="100" y="190" class="h">Tela principal (widgets)</text>
+  <text x="100" y="228" class="t">MaterialApp -> CalculadoraPage -> Form -> 3 campos + 2 botoes + card de resultado</text>
+
+  <rect x="90" y="320" width="320" height="220" rx="20" fill="#bbf7d0" stroke="#22c55e" stroke-width="3" filter="url(#shadow)"/>
+  <text x="120" y="370" class="b">1. Entrada</text>
+  <text x="120" y="405" class="t">Usuario digita:</text>
+  <text x="120" y="435" class="s">- Distancia (km)</text>
+  <text x="120" y="462" class="s">- Litros gastos</text>
+  <text x="120" y="489" class="s">- Preco por litro</text>
+  <rect x="120" y="508" width="170" height="24" rx="12" fill="#86efac"/>
+  <text x="132" y="525" class="chip">TextFormField</text>
+
+  <rect x="470" y="320" width="320" height="220" rx="20" fill="#fde68a" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/>
+  <text x="500" y="370" class="b">2. Validacao</text>
+  <text x="500" y="405" class="t">Funcao usada:</text>
+  <text x="500" y="432" class="s">_validarNumeroPositivo</text>
+  <text x="500" y="462" class="s">- Nao deixa vazio</text>
+  <text x="500" y="489" class="s">- Exige numero maior que zero</text>
+  <rect x="500" y="508" width="150" height="24" rx="12" fill="#fcd34d"/>
+  <text x="512" y="525" class="chip">_parseNumero</text>
+
+  <rect x="850" y="320" width="320" height="220" rx="20" fill="#fecaca" stroke="#ef4444" stroke-width="3" filter="url(#shadow)"/>
+  <text x="880" y="370" class="b">3. Calculo</text>
+  <text x="880" y="405" class="t">Botao Calcular chama:</text>
+  <text x="880" y="432" class="s">_calcular</text>
+  <text x="880" y="462" class="s">- km/L = distancia / litros</text>
+  <text x="880" y="489" class="s">- L/100 = (litros/distancia) * 100</text>
+  <text x="880" y="516" class="s">- custo total e custo por km</text>
+
+  <rect x="1230" y="320" width="320" height="220" rx="20" fill="#ddd6fe" stroke="#8b5cf6" stroke-width="3" filter="url(#shadow)"/>
+  <text x="1260" y="370" class="b">4. Resultado</text>
+  <text x="1260" y="405" class="t">Com setState, o app atualiza:</text>
+  <text x="1260" y="435" class="s">- Consumo km/L</text>
+  <text x="1260" y="462" class="s">- Consumo L/100 km</text>
+  <text x="1260" y="489" class="s">- Custo por km</text>
+  <text x="1260" y="516" class="s">- Custo total</text>
+
+  <line x1="410" y1="430" x2="470" y2="430" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="790" y1="430" x2="850" y2="430" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="1170" y1="430" x2="1230" y2="430" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="220" y="620" width="520" height="260" rx="20" fill="#bfdbfe" stroke="#3b82f6" stroke-width="3" filter="url(#shadow)"/>
+  <text x="250" y="675" class="b">Botao Limpar</text>
+  <text x="250" y="710" class="t">Quando clica em Limpar:</text>
+  <text x="250" y="742" class="s">1) _limpar reseta o formulario</text>
+  <text x="250" y="772" class="s">2) limpa os 3 campos de texto</text>
+  <text x="250" y="802" class="s">3) zera os resultados (null)</text>
+  <text x="250" y="832" class="s">4) card de resultado desaparece</text>
+
+  <rect x="820" y="620" width="700" height="260" rx="20" fill="#ecfeff" stroke="#06b6d4" stroke-width="3" filter="url(#shadow)"/>
+  <text x="850" y="675" class="b">Resumo rapido para lembrar</text>
+  <text x="850" y="710" class="t">Preenche -> Valida -> Calcula -> Mostra Resultado</text>
+  <text x="850" y="742" class="s">Se algo estiver vazio ou invalido, o app mostra mensagem de erro.</text>
+  <text x="850" y="772" class="s">Se estiver tudo certo, o card aparece com os 4 valores finais.</text>
+  <text x="850" y="802" class="s">Se clicar Limpar, tudo volta ao estado inicial.</text>
+
+  <rect x="70" y="930" width="1460" height="120" rx="18" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="100" y="980" class="t">Cores: Verde = Entrada | Amarelo = Validacao | Vermelho = Calculo | Roxo = Resultado | Azul = Limpar</text>
+  <text x="100" y="1015" class="s">Arquivo criado para consulta visual rapida do comportamento do codigo.</text>
+</svg>

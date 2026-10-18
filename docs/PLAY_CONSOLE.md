@@ -9,12 +9,12 @@
 - Conteúdo do app: sem anúncios, sem ID de publicidade, sem coleta/compartilhamento de dados,
   não governamental, sem recursos financeiros, sem recursos de saúde, público 13+,
   classificação IARC "outros apps" com tudo "Não" (ClassInd Livre, PEGI 3).
-- Política de privacidade: https://josephsantiagos.github.io/pilitica-de-privacidade-play-sotre-/calc-combustivel.html
+- Política de privacidade: https://josephsantiagos.github.io/pilitica-de-privacidade-play-sotre-/calc-combustivel (sem .html: com .html a checagem do Console acusou 404 por engano logo depois do deploy)
 - Loja: categoria Automóveis e veículos; contato josephsantiago250@gmail.com, site https://josephsantiagos.github.io
 - Ficha pt-BR: textos em `store/descricao-*.txt`, ícone e gráfico em `store/`, 4 capturas em `store/screens/`
   (build web deste código em Chrome headless, 360x640 dp @3 = 1080x1920; arte em `store/arte/*.html`).
 - Teste fechado Alpha: Brasil, listas "Combrix interno" + "teste de apps", feedback por e-mail,
-  versão 1 (1.0.0) da biblioteca.
+  versão 1 (1.0.0) da biblioteca. 14 mudanças ENVIADAS PARA REVISÃO em 18/10/2026 ~16:02.
 
 ## Pendências para uma versão 2
 

@@ -1,0 +1,1 @@
+Consumo em km/L e L/100 km, custo por km e custo total da viagem. Offline.

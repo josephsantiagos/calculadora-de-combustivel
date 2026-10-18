@@ -1,0 +1,29 @@
+Calc Combustível mostra, em segundos, quanto o seu carro ou moto consome de verdade e quanto custou cada viagem.
+
+COMO FUNCIONA
+Digite três números:
+• a distância percorrida (km);
+• os litros de combustível gastos;
+• o preço por litro (R$).
+
+Toque em Calcular e veja na hora:
+• o consumo médio em km/L;
+• o equivalente em L/100 km;
+• o custo por quilômetro;
+• o custo total da viagem.
+
+DICA PARA MEDIR O CONSUMO REAL
+Encha o tanque e zere o hodômetro parcial. No próximo abastecimento, também com o tanque cheio, use os quilômetros rodados e os litros que entraram na bomba.
+
+FEITO PARA O DIA A DIA
+• Aceita vírgula ou ponto nos números (5,89 ou 5.89).
+• Avisa quando falta um campo ou o valor não é válido.
+• Botão Limpar para começar de novo.
+• Serve para gasolina, etanol, diesel ou qualquer combustível vendido por litro.
+
+LEVE E PRIVADO
+• Funciona 100% offline, sem internet.
+• Sem cadastro, sem login e sem anúncios.
+• Não coleta nenhum dado pessoal e não pede permissões.
+
+Para quem dirige no dia a dia, motoristas de aplicativo, quem pega estrada e quem quer controlar o gasto com combustível.
